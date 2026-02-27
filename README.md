@@ -61,15 +61,15 @@ Server will start on:
 
 ---
 
-## 🔎 Available Endpoints
+## 📖 API Documentation (Swagger UI)
 
-### Health Check
+Once the server is running, open:
 
-    GET /healthz
+    http://localhost:3000/docs
 
-Response:
+From there you can:
 
-```json
-{
-  "status": "ok"
-}
+- View all registered endpoints
+- Inspect request/response schemas
+- Execute requests directly from the browser
+- Download the OpenAPI spec
