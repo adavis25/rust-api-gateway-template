@@ -16,7 +16,3 @@ pub fn build_router() -> Router {
 fn health_routes() -> Router {
     Router::new().route("/healthz", get(super::routes::health::healthz))
 }
-
-async fn openapi_json() -> axum::Json<utoipa::openapi::OpenApi> {
-    axum::Json(ApiDoc::openapi())
-}
